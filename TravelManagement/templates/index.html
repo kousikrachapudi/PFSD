@@ -1,0 +1,19 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Tourism Management</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'  %}" />
+
+</head>
+<body style="background-image: url('{% static 'images/KK.jpeg' %}');background-repeat:no-repeat;background-size:100%;";>
+<h1> Travel Tourism Management </h1>
+<a href="{% url 'register' %}"> sign-up | </a>
+<a href="{% url 'login' %}"> Login |</a>
+<a href="{% url 'home' %}">Home | </a>
+<br><br><br>
+{% block 'b1' %}
+
+{% endblock %}
+</>
+</html>
